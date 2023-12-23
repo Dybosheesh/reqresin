@@ -88,7 +88,7 @@ public class UserSteps {
                 .response().as(CreatedUserResponse.class);
     }
     @Step ("Изменить существующего пользователя")
-    public ChangedUserResponse putСhangeUser (UserRequest UR, Integer statusCode) {
+    public ChangedUserResponse putChangeUser (UserRequest UR, Integer statusCode) {
         return given()
                 .baseUri("https://reqres.in")
                 .body(UR)
@@ -101,7 +101,7 @@ public class UserSteps {
                 .response().as(ChangedUserResponse.class);
     }
     @Step ("Изменить существующего пользователя 2.0")
-    public ChangedUserResponse patchСhangeUser (UserRequest UR, Integer statusCode) {
+    public ChangedUserResponse patchChangeUser (UserRequest UR, Integer statusCode) {
         return given()
                 .baseUri("https://reqres.in")
                 .body(UR)
