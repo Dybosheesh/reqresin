@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class СhangedUserResponse {
+public class ChangedUserResponse {
     private String name;
     private String job;
     private Date updatedAt;

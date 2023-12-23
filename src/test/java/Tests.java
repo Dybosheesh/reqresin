@@ -45,13 +45,13 @@ public class Tests extends BaseTest {
     @Test(description = "Изменение пользователя")
     public void putСhangeUser() {
         UserRequest login = new UserRequest("morpheus", "zion resident");
-        СhangedUserResponse user = USER_STEPS.putСhangeUser(login, 200);
+        ChangedUserResponse user = USER_STEPS.putСhangeUser(login, 200);
         System.out.println(user);
     }
     @Test(description = "Изменение пользователя 2.0")
     public void patchСhangeUser() {
         UserRequest login = new UserRequest("morpheus", "zion resident");
-        СhangedUserResponse user = USER_STEPS.patchСhangeUser(login, 200);
+        ChangedUserResponse user = USER_STEPS.patchСhangeUser(login, 200);
         System.out.println(user);
     }
     @Test(description = "Удаление пользователя")

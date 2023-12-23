@@ -88,7 +88,7 @@ public class UserSteps {
                 .response().as(CreatedUserResponse.class);
     }
     @Step ("Изменить существующего пользователя")
-    public СhangedUserResponse putСhangeUser (UserRequest UR, Integer statusCode) {
+    public ChangedUserResponse putСhangeUser (UserRequest UR, Integer statusCode) {
         return given()
                 .baseUri("https://reqres.in")
                 .body(UR)
@@ -98,10 +98,10 @@ public class UserSteps {
                 .assertThat()
                 .statusCode(statusCode)
                 .extract()
-                .response().as(СhangedUserResponse.class);
+                .response().as(ChangedUserResponse.class);
     }
     @Step ("Изменить существующего пользователя 2.0")
-    public СhangedUserResponse patchСhangeUser (UserRequest UR, Integer statusCode) {
+    public ChangedUserResponse patchСhangeUser (UserRequest UR, Integer statusCode) {
         return given()
                 .baseUri("https://reqres.in")
                 .body(UR)
@@ -111,7 +111,7 @@ public class UserSteps {
                 .assertThat()
                 .statusCode(statusCode)
                 .extract()
-                .response().as(СhangedUserResponse.class);
+                .response().as(ChangedUserResponse.class);
     }
     @Step ("Удалить существующего пользователя")
     public void deleteUser (Integer statusCode) {
