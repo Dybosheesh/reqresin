@@ -43,13 +43,13 @@ public class Tests extends BaseTest {
         System.out.println(user);
     }
     @Test(description = "Изменение пользователя")
-    public void putСhangeUser() {
+    public void putChangeUser() {
         UserRequest login = new UserRequest("morpheus", "zion resident");
         ChangedUserResponse user = USER_STEPS.putСhangeUser(login, 200);
         System.out.println(user);
     }
     @Test(description = "Изменение пользователя 2.0")
-    public void patchСhangeUser() {
+    public void patchChangeUser() {
         UserRequest login = new UserRequest("morpheus", "zion resident");
         ChangedUserResponse user = USER_STEPS.patchСhangeUser(login, 200);
         System.out.println(user);
